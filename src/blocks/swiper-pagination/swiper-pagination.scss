@@ -1,0 +1,31 @@
+@import "../../scss/colors.scss";
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  position: unset;
+  width: fit-content!important;
+  margin: 0;
+
+  &-bullet{
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    background: rgba(54, 52, 53, 0.5);
+    box-sizing: border-box;
+    opacity: 1;
+    margin: 0!important;
+
+    @media screen and (max-width: 769px) {
+      width: 8px;
+      height: 8px;
+      min-width: 8px;
+    }
+
+    &-active{
+
+    }
+  }
+}

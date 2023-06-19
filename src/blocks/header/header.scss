@@ -1,0 +1,89 @@
+@import "../../scss/colors.scss";
+
+.header {
+  padding: 0 30px;
+
+  @media screen and (max-width: 769px) {
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+
+    @media screen and (max-width: 769px) {
+      border-bottom: 1px solid #EFEFEF;
+      padding: 7px 0;
+    }
+  }
+
+  &__info {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: $purple;
+      text-decoration: underline;
+    }
+  }
+
+  &__button {
+    max-width: 300px;
+
+    @media screen and (max-width: 769px) {
+      max-width: 50px;
+      width: 50px;
+      min-width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      & svg,
+      & img {
+        @media screen and (max-width: 769px) {
+          fill: $white;
+        }
+      }
+    }
+
+    & svg,
+    & img {
+      display: none;
+      fill: $purple-lite;
+
+      @media screen and (max-width: 769px) {
+        display: flex;
+      }
+    }
+
+    & span {
+      @media screen and (max-width: 769px) {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1160px) {
+  }
+}
