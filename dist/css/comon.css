@@ -65,9 +65,9 @@ main {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   section {
-    padding: 40px 20px;
+    padding: 35px 20px;
   }
 }
 

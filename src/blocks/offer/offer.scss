@@ -1,0 +1,51 @@
+@import "../../scss/colors.scss";
+
+.offer {
+  &__wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid $purple-lite65;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 1250px) {
+      width: calc(100% - 60px);
+    }
+    @media screen and (max-width: 1024px) {
+      width: calc(100% - 60px);
+      padding: 15px 60px;
+    }
+    @media screen and (max-width: 769px) {
+      width: 100%;
+      padding: 20px 8px;
+    }
+  }
+
+  &__inner {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    font-family: Roboto, serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 1250px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+
+  }
+}
