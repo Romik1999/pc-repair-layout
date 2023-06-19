@@ -1,7 +1,239 @@
 @import "../../scss/colors.scss";
 
 .footer {
+  box-shadow: 4px 4px 4px 4px rgba(28, 24, 23, 0.25);
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
 
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      align-items: unset;
+      row-gap: 30px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 35px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 769px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__offer {
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 105%;
+    color: $white;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
+
+    &:before {
+      content: '';
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      background-color: $yellow;
+      z-index: -1;
+      box-shadow: 3px 3px 3px rgba(255, 166, 7, 0.1);
+      border-radius: 18px;
+
+      @media screen and (max-width: 1440px) {
+        border-radius: 16px;
+      }
+      @media screen and (max-width: 1024px) {
+        border-radius: 14px;
+      }
+      @media screen and (max-width: 769px) {
+        display: none;
+      }
+    }
+  }
+
+  &-info {
+    &__items {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+
+      @media screen and (max-width: 1024px) {
+        row-gap: 15px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 120%;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 18px;
+      }
+    }
+
+    &__value {
+      font-family: Roboto, serif;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 120%;
+      color: $purple-lite65;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__image {
+    max-width: 39%;
+    width: 100%;
+    display: flex;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 30%;
+    }
+    @media screen and (max-width: 769px) {
+      max-width: 450px;
+    }
+
+    & img,
+    & svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__form {
+    max-width: 405px;
+    width: 100%;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 245px;
+    }
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
+  }
+
+  &-form {
+
+    &__title {
+      font-family: Nunito, serif;
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 126%;
+      text-align: center;
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      & span {
+        color: $purple-lite65;
+      }
+    }
+
+    &__subtitle {
+      font-family: Roboto, serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 120%;
+      text-align: center;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+    }
+
+    & .form {
+      &__wrapper {
+        row-gap: 7px;
+      }
+
+      &__input {
+        @media screen and (max-width: 1024px) {
+          height: 35px;
+          font-size: 12px;
+        }
+
+        &::placeholder {
+          @media screen and (max-width: 1024px) {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &__submit {
+        @media screen and (max-width: 1024px) {
+          font-size: 12px;
+          height: 35px;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    font-family: Roboto, serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #0000EE;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+    }
+  }
 
   @media screen and (max-width: 769px) {
 
