@@ -924,7 +924,7 @@ main {
 }
 
 .thanks__subtitle {
-  font-weight: 600;
+  font-family: Roboto, serif;
   font-size: 30px;
   line-height: 120%;
   text-align: center;
@@ -1505,6 +1505,14 @@ main {
     right: 30px;
   }
 
+  .thanks__title {
+    margin-bottom: 15px;
+  }
+
+  .thanks__subtitle {
+    font-size: 24px;
+  }
+
   .why-slider__item.swiper-slide-next {
     font-size: 18px;
   }
@@ -1797,12 +1805,8 @@ main {
     margin-bottom: 40px;
   }
 
-  .thanks__title {
-    margin-bottom: 15px;
-  }
-
   .thanks__subtitle {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .offer__wrapper {
@@ -1870,10 +1874,6 @@ main {
 
 @media screen and (max-width: 340px) {
   .modal__subtitle {
-    font-size: 18px;
-  }
-
-  .thanks__subtitle {
     font-size: 18px;
   }
 }

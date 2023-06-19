@@ -47,7 +47,7 @@
 }
 
 .thanks__subtitle {
-  font-weight: 600;
+  font-family: Roboto, serif;
   font-size: 30px;
   line-height: 120%;
   text-align: center;
@@ -64,6 +64,14 @@
     top: 30px;
     right: 30px;
   }
+
+  .thanks__title {
+    margin-bottom: 15px;
+  }
+
+  .thanks__subtitle {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -76,16 +84,6 @@
     margin-bottom: 40px;
   }
 
-  .thanks__title {
-    margin-bottom: 15px;
-  }
-
-  .thanks__subtitle {
-    font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 340px) {
   .thanks__subtitle {
     font-size: 18px;
   }
