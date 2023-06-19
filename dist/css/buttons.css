@@ -49,6 +49,16 @@
   background-color: rgb(99, 26, 172);
 }
 
+.btn--grey {
+  background-color: rgba(136, 136, 136, 0.45);
+  border: none;
+  color: #ffffff;
+}
+
+.btn--grey:hover {
+  background-color: rgb(136, 136, 136);
+}
+
 @media screen and (max-width: 1441px) {
   .btn {
     font-size: 18px;

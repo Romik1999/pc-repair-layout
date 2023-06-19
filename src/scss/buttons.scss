@@ -53,4 +53,14 @@
       background-color: $purple;
     }
   }
+
+  &--grey {
+    background-color: rgba(136, 136, 136, 0.45);
+    border: none;
+    color: $white;
+
+    &:hover {
+      background-color: rgba(136, 136, 136, 1);
+    }
+  }
 }

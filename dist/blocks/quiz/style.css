@@ -1,0 +1,222 @@
+.quiz__title {
+  margin-bottom: 70px;
+}
+
+.quiz__question {
+  max-width: 790px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.quiz-question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+
+.quiz-question__title {
+  font-family: Nunito, serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.quiz-question__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.quiz-question__item {
+  width: calc(50% - 10px);
+  position: relative;
+}
+
+.quiz-question__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(99, 26, 172, 0.65);
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 20px;
+  height: 60px;
+}
+
+.quiz-question__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.quiz-question__input:checked ~ .quiz-question__label {
+  background-color: #FFC151;
+  border: 1px solid #FFC151;
+}
+
+.quiz-question__input:checked ~ .quiz-question__label .quiz-question__icon {
+  border: 2px solid #ffffff;
+}
+
+.quiz-question__input:checked ~ .quiz-question__label .quiz-question__icon svg,
+.quiz-question__input:checked ~ .quiz-question__label .quiz-question__icon img {
+  opacity: 1;
+}
+
+.quiz-question__input:checked ~ .quiz-question__label .quiz-question__text {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.quiz-question__icon {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  border: 2px solid #9A6AC9;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1px;
+  padding-left: 2px;
+}
+
+.quiz-question__icon svg,
+.quiz-question__icon img {
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 34px;
+  height: 19px;
+}
+
+.quiz-question__text {
+  font-family: Roboto, serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 120%;
+}
+
+.quiz-question__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.quiz-question__button {
+  max-width: 385px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+  .quiz__title {
+    margin-bottom: 45px;
+  }
+
+  .quiz__question {
+    max-width: 600px;
+  }
+
+  .quiz-question {
+    row-gap: 25px;
+  }
+
+  .quiz-question__title {
+    font-size: 24px;
+  }
+
+  .quiz-question__items {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    row-gap: 10px;
+  }
+
+  .quiz-question__label {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    border-radius: 6px;
+    padding: 12px 14px;
+    height: 50px;
+  }
+
+  .quiz-question__icon {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    padding-top: 0;
+  }
+
+  .quiz-question__icon svg,
+  .quiz-question__icon img {
+    width: 22px;
+    height: 12px;
+  }
+
+  .quiz-question__text {
+    font-size: 14px;
+  }
+
+  .quiz-question__buttons {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+
+  .quiz-question__button {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .quiz__title {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .quiz-question {
+    row-gap: 20px;
+  }
+
+  .quiz-question__title {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .quiz-question__item {
+    width: 100%;
+  }
+
+  .quiz-question__button {
+    max-width: 100%;
+  }
+}
