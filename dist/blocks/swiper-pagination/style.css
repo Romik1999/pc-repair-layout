@@ -19,14 +19,21 @@
 }
 
 .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  min-width: 12px;
-  background: rgba(54, 52, 53, 0.5);
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  background: #C9C9C9;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   opacity: 1;
   margin: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 14px;
+  min-width: 14px;
+  height: 14px;
+  background: #C8AFE2;
 }
 
 @media screen and (max-width: 769px) {
