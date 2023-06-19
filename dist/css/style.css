@@ -1496,6 +1496,10 @@ main {
     right: 30px;
   }
 
+  .modal__title {
+    margin-bottom: 15px;
+  }
+
   .modal__subtitle {
     margin-bottom: 40px;
   }
@@ -1765,6 +1769,11 @@ main {
     line-height: 105%;
   }
 
+  .form--row-1 .form__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
   .form--row-2 .form__field {
     width: 100%;
   }
@@ -1787,13 +1796,13 @@ main {
     margin-bottom: 40px;
   }
 
-  .modal__title {
-    margin-bottom: 15px;
-  }
-
   .modal__subtitle {
     font-size: 22px;
     margin-bottom: 20px;
+  }
+
+  .modal__form {
+    max-width: 500px;
   }
 
   .thanks__wrapper {

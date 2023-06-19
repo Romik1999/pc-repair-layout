@@ -123,6 +123,11 @@
 }
 
 @media screen and (max-width: 769px) {
+  .form--row-1 .form__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
   .form--row-2 .form__field {
     width: 100%;
   }

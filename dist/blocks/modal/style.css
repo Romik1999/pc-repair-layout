@@ -129,6 +129,10 @@
     right: 30px;
   }
 
+  .modal__title {
+    margin-bottom: 15px;
+  }
+
   .modal__subtitle {
     margin-bottom: 40px;
   }
@@ -149,13 +153,13 @@
     margin-bottom: 40px;
   }
 
-  .modal__title {
-    margin-bottom: 15px;
-  }
-
   .modal__subtitle {
     font-size: 22px;
     margin-bottom: 20px;
+  }
+
+  .modal__form {
+    max-width: 500px;
   }
 }
 

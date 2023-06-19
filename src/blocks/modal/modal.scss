@@ -92,7 +92,7 @@
   &__title {
     margin-bottom: 30px;
 
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 1024px) {
       margin-bottom: 15px;
     }
   }
@@ -124,5 +124,9 @@
     max-width: 850px;
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: 769px) {
+      max-width: 500px;
+    }
   }
 }
