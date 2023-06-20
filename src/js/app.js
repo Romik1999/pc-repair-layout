@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const problemsSlider = new Swiper('.why-slider', {
+
         slidesPerView: 3,
         loop: true,
         spaceBetween: 50,
-        // centeredSlides: true,
-        // loopPreventsSliding: true,
+        centeredSlides: true,
         pagination: {
             el: '.why-slider__pagination',
             clickable: true
@@ -18,10 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             300: {
                 slidesPerView: 1,
                 spaceBetween: 20,
-            },
-            576: {
-                spaceBetween: 15,
-                slidesPerView: 2,
+                autoHeight: true,
             },
             769: {
                 spaceBetween: 30,
