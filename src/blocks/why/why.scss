@@ -2,16 +2,26 @@
 
 .why {
   padding-left: 0;
-  padding-bottom: 0;
+  padding-right: 0;
   overflow: hidden;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 
   &__title {
     margin-bottom: 50px;
   }
 
+  //&__slider {
+  //  max-width: 1400px;
+  //  width: 100%;
+  //  margin: 0 auto;
+  //}
+
   &-slider {
-    padding: 40px 30px;
-    overflow: visible;
+    padding: 40px 25px;
+    //overflow: visible;
+    box-sizing: border-box;
 
     &__items {
       align-items: center;
@@ -77,7 +87,7 @@
 
   &-item {
     background: #FAFAFA;
-    box-shadow: 0px 49.6869px 124.217px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 37px;
     height: 100%;
     display: flex;
